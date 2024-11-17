@@ -1,0 +1,97 @@
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+.todo-input {
+    border: 2px solid #e9ecef;
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.todo-input:focus {
+    border-color: #4a69bd;
+    box-shadow: 0 0 0 0.2rem rgba(74, 105, 189, 0.25);
+}
+
+.btn-primary {
+    background-color: #4a69bd;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 20px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #3c55a5;
+    transform: translateY(-2px);
+}
+
+.list-group-item {
+    border: none;
+    border-radius: 10px !important;
+    margin-bottom: 8px;
+    background-color: #f8f9fa;
+    padding: 1rem;
+    transition: all 0.3s ease;
+}
+
+.list-group-item:hover {
+    transform: translateX(5px);
+    background-color: #e9ecef;
+}
+
+.remove-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 15px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.remove-btn:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+}
+
+.img-fluid {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* 애니메이션 효과 */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.list-group-item {
+    animation: fadeIn 0.5s ease;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    .card-body {
+        padding: 1.5rem;
+    }
+    
+    .todo-input, .btn-primary {
+        padding: 10px;
+    }
+}

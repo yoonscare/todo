@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo 웹앱</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="card shadow-lg">
+                    <div class="card-body">
+                        <div class="text-center mb-4">
+                            <img src="https://tse1.mm.bing.net/th?id=OIP.QFpKPiIbd1FaDHdL7669QgHaHa&pid=Api&P=0&h=220" 
+                                 alt="시간은 금이다" 
+                                 class="img-fluid rounded-circle mb-3" 
+                                 style="max-width: 150px;">
+                            <h2 class="card-title text-primary">할 일 목록</h2>
+                        </div>
+                        <div class="input-group mb-4">
+                            <input type="text" 
+                                   class="form-control todo-input" 
+                                   placeholder="새로운 할 일을 입력하세요">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary add-btn">
+                                    <i class="fas fa-plus"></i> 추가
+                                </button>
+                            </div>
+                        </div>
+                        <ul class="list-group todo-list"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>
+</html>
